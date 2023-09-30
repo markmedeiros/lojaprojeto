@@ -1,0 +1,298 @@
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+}
+.body{
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+/*ESTILO DO MENU*/
+.navegacao{
+    width: 100%;
+    height: 70px;
+    background-color: #88d3ffbb;
+    border-top: 1.5px solid #002ead ;
+    display: flex;
+    border-radius: 7px 7px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+}
+.navegacao ul{
+    width: 340px;
+    display: flex;
+    padding-left: 0px
+}
+.navegacao ul li{
+    width: 70px;
+    height: 70px;
+    list-style-type: none;
+    position: relative;
+}
+.navegacao ul li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    position: relative;
+}
+.navegacao ul li a .icone{
+    display: block;
+    line-height: 76px;
+}
+.navegacao ul li a .icone svg{
+    width: 23px;
+    height: 23px;
+    position: relative;
+}
+/* ESTILO BUSCA*/
+.tela-maxima{
+    max-width: 1000px;
+    margin: auto;
+}
+.interface img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 5px 5px;
+}
+.flex .buscar{
+    padding: 10px 4%;
+}
+.flex .buscar input{ 
+    border-radius: 8px;
+    border: 1px solid #002ead;
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    padding: 3px;
+}
+.flex .buscar input::placeholder{
+    margin-left: 10px;
+}
+.buscar input textarea{
+    resize: none;
+    height: 200px;
+}
+.carrinho{
+    padding: 10px 4%;
+}
+.carrinho svg{
+    color: #002ead;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    top: -3%;
+}
+/* ESTILO DESTAQUE*/
+main .interface h2{
+    padding:0 4%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #002ead;
+}
+.destaque{
+    width: 100%;
+    height: 200px;
+    padding: 20px 4%;
+    display: flex;
+    overflow-x: scroll;
+}
+.destaque::-webkit-scrollbar{
+    height: 10px;
+}
+.destaque::-webkit-scrollbar-thumb{
+    background-color: #88d3ff;
+    border-radius: 10px;
+}
+.destaque .destaque-circulo{
+    padding: 37px;
+    border-radius: 50%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin: 0 10px;
+    transition: .4s;
+}
+.destaque .destaque-circulo:hover{
+    transform: scale(1.05);
+}
+.destaque p{
+    font-size: 14px;
+    text-align: center;
+}
+/*ESTILO PRODUTOS*/
+.produtos{
+    background-color: #88d3ff6e;
+    border-radius: 8px 8px 0px 0px;
+    max-width: 1000px;
+    margin: auto;
+}
+article{
+    padding-bottom: 20px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+.produtos h1{
+    padding:0 3%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #002ead;
+}
+.produtos h2{
+    padding:0 5%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #002ead;
+}
+.produtos .eletronicos{
+    margin: 20px 5%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+}
+.produtos .eletronicos:hover{
+    transform: scale(1.05);
+}
+.eletronicos img{
+    width: 140px;
+    height: 120px;
+}.eletronicos .acessorios{
+    width: 140px;
+    height: 120px;
+    border-radius: 0 10px 10px 0;
+}
+.eletronicos h3{
+    color: #002ead;
+    font-size: 20px;
+    margin-left: 25px;
+}
+/*ESTILO DA PAGINA CONTATOS*/
+
+.interface .contatos{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px 4%;
+}
+.interface .contatos .contato{
+    background-color: rgba(135, 248, 210, 0.856);
+    width: 125px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1.5px solid #002ead;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.interface .contatos .contato:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 0px 8px #002ead86;
+}
+.interface .contatos .contato svg{
+    width: 22px;
+    height: 22px;
+    
+}
+/*ESTILO CARRINHO*/
+.compra{
+    margin: 20px 5%;
+    background-color: #88d3ff6e;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+    border: 1.5px solid #002ead;
+}
+.compra:hover{
+    transform: scale(1.05);
+}
+.compra .intem-compra{
+    color: #002ead;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.compra .sgv.geral{
+    margin-bottom: 50px;
+}
+.adicionar{
+margin: auto;
+}
+.adicionar .adicionar-itens{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.adicionar .p-adicionar{
+    color: rgb(1, 180, 1);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+.adicionar .p-limpar{
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+.adicionar .p-adicionar:hover, .adicionar .p-limpar:hover{
+    transform: scale(1.05);
+}
+.finalizar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    background-color: #3255b4;
+    border-radius: 10px;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: .4s;
+}
+.finalizar:active{
+    transform: scale(0.96);
+}
+.finalizar .p-preço{
+    color: #ffffff;
+}
+.total{
+    margin-top: 20px;
+}
+.p-total{
+    padding: 0px 6%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #002ead;
+}
